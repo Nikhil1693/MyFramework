@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="My Framework suite" parallel="tests" >
+
+<listeners>
+<listener class-name="com.listeners.ScreenshotListener"/>
+</listeners>
+
+
+	<test name="Login page Test">
+		
+		<classes>
+			<class name="com.tests.LoginPageTest" />
+			
+		</classes>
+
+	</test>
+
+<test name="Home Page Test">
+
+<classes>
+<class name="com.tests.HomePageTest" />
+</classes>
+
+
+</test>
+
+
+
+
+
+
+
+</suite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [My Framework suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.listeners.ScreenshotListener"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Home Page Test(failed)">
+    <classes>
+      <class name="com.tests.HomePageTest">
+        <methods>
+          <include name="verifyTitle"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="homePageSetup"/>
+        </methods>
+      </class> <!-- com.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Home Page Test(failed) -->
+</suite> <!-- Failed suite [My Framework suite] -->
